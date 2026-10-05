@@ -1,0 +1,11 @@
+run: npm run dev
+seed: npm run db:seed
+test: npm test
+base_url: http://localhost:3000
+endpoints:
+  - POST /api/v1/meter
+  - GET /api/v1/usage
+  - POST /api/v1/checkout
+  - GET /api/v1/subscription
+  - POST /webhooks/stripe
+  - GET /health
